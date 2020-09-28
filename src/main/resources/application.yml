@@ -1,6 +1,6 @@
 spring:
   rabbitmq:
-    host: localhost
+    host: 192.168.77.134
     password: guest
     username: guest
     listener:

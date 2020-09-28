@@ -8,6 +8,10 @@ import org.springframework.context.annotation.Configuration;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * 文章地址
+ * https://www.cnblogs.com/mfrank/p/11260355.html
+ */
 @Configuration
 public class RabbitMQConfig {
 
@@ -15,13 +19,16 @@ public class RabbitMQConfig {
     public static final String DELAY_QUEUEA_NAME = "delay.queue.demo.business.queuea";
     public static final String DELAY_QUEUEB_NAME = "delay.queue.demo.business.queueb";
     public static final String DELAY_QUEUEC_NAME = "delay.queue.demo.business.queuec";
+
     public static final String DELAY_QUEUEA_ROUTING_KEY = "delay.queue.demo.business.queuea.routingkey";
     public static final String DELAY_QUEUEB_ROUTING_KEY = "delay.queue.demo.business.queueb.routingkey";
     public static final String DELAY_QUEUEC_ROUTING_KEY = "delay.queue.demo.business.queuec.routingkey";
+
     public static final String DEAD_LETTER_EXCHANGE = "delay.queue.demo.deadletter.exchange";
     public static final String DEAD_LETTER_QUEUEA_ROUTING_KEY = "delay.queue.demo.deadletter.delay_10s.routingkey";
     public static final String DEAD_LETTER_QUEUEB_ROUTING_KEY = "delay.queue.demo.deadletter.delay_60s.routingkey";
     public static final String DEAD_LETTER_QUEUEC_ROUTING_KEY = "delay.queue.demo.deadletter.delay_anytime.routingkey";
+
     public static final String DEAD_LETTER_QUEUEA_NAME = "delay.queue.demo.deadletter.queuea";
     public static final String DEAD_LETTER_QUEUEB_NAME = "delay.queue.demo.deadletter.queueb";
     public static final String DEAD_LETTER_QUEUEC_NAME = "delay.queue.demo.deadletter.queuec";
